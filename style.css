@@ -1,0 +1,241 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: block;
+}
+
+.edge1 {
+	height: 10%;
+	width: 100%;
+	display: flex;
+}
+
+.mid {
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.edge2 {
+	height: 30%;
+	width: 100%;
+	display: flex;
+}
+
+.out {
+	height: 100%;
+	width: 25%;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+}
+
+.in {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+}
+
+.erow {
+	height: 100%;
+	width: 50%;
+	display: flex;
+}
+
+.eblock {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+}
+
+.min {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	background-color: #453c49;
+}
+
+.mout {
+	height: 100%;
+	width: 25%;
+	display: flex;
+}
+
+.mblock {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	align-items: center;	
+	justify-content: center; 
+}
+
+.block {
+	display: block;
+}
+
+
+/* opaque = nontransparent, not letting light through, difficult to understand */
+.opaque {
+	opacity: 0.5;
+}
+
+/* colors */
+.light-grey {background-color: #A9A9A9;}
+.dark-grey {background-color: #707070;}
+.black {background-color: #000000;}
+.white {background-color: #FFFFFF;}
+.mplsblue {background-color: #5fbcf7;}
+.mplsyellow {background-color: #fff25c;}
+.purple {background-color: #552583;}
+.gold {background-color: #FDB927;}
+.gold2 {background-color: #fedc7f;}
+/* you may choose to use these classes for one of the challenges */
+.gone {
+	display: none;
+}
+.invisible {
+	visibility: hidden;
+}
+.fixed-location {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.mainattimg{
+	border-style: solid;
+	border-width: 5px;
+	border-color: white; 
+}
+
+img {
+	max-height: 95%;
+	max-width: 95%;
+}
+
+@media only screen and (max-width: 1100px) {
+
+	.mid {
+		display: flex;
+		flex-wrap: wrap;
+		height: 67.5%;
+
+	}
+	
+	.edge2 {
+		display: flex;
+		flex-wrap: wrap;
+		height: 22.5%
+	}
+	
+	.min {
+		width: 100%;
+		height: calc(200%/3);
+	}
+	
+	.mout {
+		width: 50%;
+		height: calc(100%/3);
+		display: flex;
+	}
+	
+	.mblock {
+		height: 100%;
+	}
+	
+	#mainatt {
+		order: 1;
+	}
+	#onetwo {
+		order: 2;
+	}
+	#seveneight {
+		order: 2;
+	}
+	
+	
+	#one {background-color: #FDB927;}
+
+	#two {background-color: #552583;}
+
+}
+
+@media only screen and (max-width: 750px) {
+
+	.mid {
+		display: flex;
+		flex-wrap: wrap;
+		height: 90%;
+
+	}
+	
+	.min {
+		width: 100%;
+		height: 50%
+	}
+	
+	.mout {
+		width: 100%;
+		height: 25%;
+		display: flex;
+	}
+	
+	.mblock {
+		height: 100%;
+	}
+	
+	#mainatt {
+		order: 1;
+	}
+	#onetwo {
+		order: 2;
+	}
+	#seveneight {
+		order: 3;
+	}
+	
+	.edge2 {
+		display: flex;
+		flex-wrap: wrap;
+		height: 45%
+	}
+	
+	.erow {
+		width: 100%;
+		height: 50%
+	}
+	
+	.eblock {
+		width: 50%;
+		display: flex;
+	}
+	
+	.mblock {
+		height: 100%;
+	}
+	
+	#threefour {
+		order: 1;
+	}
+	#fivesix {
+		order: 2;
+	}
+	
+	#one {background-color: #552583;}
+	
+	#two {background-color: #FDB927;}
+	
+	#five {background-color: #FDB927;}
+
+	#six {background-color: #552583;}
+
+}
+
