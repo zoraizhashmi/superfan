@@ -23,3 +23,8 @@ function setMainImg(){
 		main.src = "images/starter3.jpg";
 	}
 }
+
+function clickOne(){
+	main.src = "images/lebron1.png"
+	var audio = new Audio('audio/lebron.mp3');
+	audio.play();}

@@ -110,17 +110,27 @@ body {
 	bottom: 0;
 	left: 0;
 }
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.zoom {
+	transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .mainattimg{
 	border-style: solid;
 	border-width: 5px;
 	border-color: white; 
-}
-
-img {
 	max-height: 95%;
 	max-width: 95%;
 }
-
 @media only screen and (max-width: 1100px) {
 
 	.mid {
@@ -165,6 +175,12 @@ img {
 	#one {background-color: #FDB927;}
 
 	#two {background-color: #552583;}
+
+	.mainattimg{
+		border-style: solid;
+		border-width: 2.5px;
+		border-color: white; 
+}
 
 }
 
@@ -237,5 +253,10 @@ img {
 
 	#six {background-color: #552583;}
 
+	.mainattimg{
+	border-style: solid;
+	border-width: 1px;
+	border-color: white; 
+}
 }
 
