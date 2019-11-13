@@ -3,7 +3,9 @@ body {
 	height: 100%;
 	margin: 0;
 	display: block;
+	cursor: url('images/cursor.png'), auto;
 }
+
 
 .edge1 {
 	height: 10%;
@@ -122,6 +124,8 @@ img {
 
 .zoom:hover {
   transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: url('images/hoverc.png'), auto;
+
 }
 
 .mainattimg{
