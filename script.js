@@ -33,24 +33,25 @@ function playStart() {
 }
 
 function clickOne(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
+	rone = Math.floor(Math.random() * 3);
+	if (rone == 0) {
 		main.src = "images/lebron1.png";
+		a.src = "images/lebron2.gif";
 	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
+	else if (rone == 1){
+		main.src = "images/lebron.gif";
+		a.src = "images/labron.jpg";
 	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
+	else if (rone == 2) {
+		main.src = "images/lebron2.jpg";
+		a.src = "images/lebron3.gif";
 	}
-	var audio = new Audio('audio/caruso.wav');
+	var audio = new Audio('audio/lebron.wav');
 	audio.play();
 }
 
 function clickTwo(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
+	rtwo = Math.floor(Math.random() * 3);
 	if (rmain == 0) {
 		main.src = "images/lebron1.png";
 	} 
@@ -65,34 +66,22 @@ function clickTwo(){
 }
 
 function clickThree(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
-		main.src = "images/lebron1.png";
-	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
-	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
-	}
-	var audio = new Audio('audio/caruso.wav');
+	main.src = "images/dgreen.gif";
+	c.src = "images/dgreen.jpg";
+	var audio = new Audio('audio/dgreen.wav');
 	audio.play();
 }
 
 function clickFour(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
-		main.src = "images/lebron1.png";
-	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
+	rfour = Math.floor(Math.random() * 2);
+	main.src = "images/dwight.gif";
+	if (rfour == 0) {
+		d.src = "images/dwight.jpg";
 	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
+	if (rfour == 1) {
+		d.src = "images/dwight.jfif";
 	}
-	var audio = new Audio('audio/caruso.wav');
+	var audio = new Audio('audio/dwight.wav');
 	audio.play();
 }
 
@@ -129,17 +118,16 @@ function clickSix(){
 }
 
 function clickSeven(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
+	rseven = Math.floor(Math.random() * 3);
+	if (rseven == 0) {
 		main.src = "images/caruso5.jpg";
 		g.src = "images/caruso.jfif";
 	} 
-	else if (rmain == 1){
+	else if (rseven == 1){
 		main.src = "images/caruso.gif";
 		g.src = "images/caruso4.jpg";
 	}
-	else if (rmain == 2) {
+	else if (rseven == 2) {
 		main.src = "images/caruso2.jpg";
 		g.src = "images/caruso3.jpg";
 	}
