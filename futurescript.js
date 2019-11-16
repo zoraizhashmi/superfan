@@ -50,7 +50,7 @@ function clickOne(){
 		main.src = "images/lebron2.jpg";
 		a.src = "images/lebron3.gif";
 	}
-	var audio = new Audio('audio/lebron.wav');
+	var audio = new Audio('audio/giannis.wav');
 	audio.play();
 }
 
@@ -65,14 +65,14 @@ function clickTwo(){
 	else if (rmain == 2) {
 		main.src = "images/dgreen.png";
 	}
-	var audio = new Audio('audio/caruso.wav');
+	var audio = new Audio('audio/harden.wav');
 	audio.play();
 }
 
 function clickThree(){
 	main.src = "images/dgreen.gif";
 	c.src = "images/dgreen.jpg";
-	var audio = new Audio('audio/dgreen.wav');
+	var audio = new Audio('audio/zion.wav');
 	audio.play();
 }
 
@@ -85,7 +85,7 @@ function clickFour(){
 	if (rfour == 1) {
 		d.src = "images/dwight.jfif";
 	}
-	var audio = new Audio('audio/dwight.wav');
+	var audio = new Audio('audio/curry.wav');
 	audio.play();
 }
 
@@ -101,7 +101,7 @@ function clickFive(){
 	else if (rmain == 2) {
 		main.src = "images/dgreen.png";
 	}
-	var audio = new Audio('audio/caruso.wav');
+	var audio = new Audio('audio/westbrook.wav');
 	audio.play();
 }
 
@@ -117,7 +117,7 @@ function clickSix(){
 	else if (rmain == 2) {
 		main.src = "images/dgreen.png";
 	}
-	var audio = new Audio('audio/caruso.wav');
+	var audio = new Audio('audio/kd.wav');
 	audio.play();
 }
 
@@ -136,7 +136,7 @@ function clickSeven(){
 		g.src = "images/caruso3.jpg";
 	}
 	
-	var audio = new Audio('audio/caruso.wav');
+	var audio = new Audio('audio/butler.wav');
 	audio.play();
 }
 
@@ -152,6 +152,6 @@ function clickEight(){
 	else if (rmain == 2) {
 		main.src = "images/dgreen.png";
 	}
-	var audio = new Audio('audio/caruso.wav');
+	var audio = new Audio('audio/dame.wav');
 	audio.play();
 }
