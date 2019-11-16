@@ -27,6 +27,10 @@ function setMainImg(){
 	}
 }
 
+function openFuture(){
+	window.open("part1.html", '_self');
+}
+
 function playStart() {
 	var audio = new Audio('audio/purpandyellow.wav');
 	audio.play();
