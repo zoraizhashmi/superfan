@@ -28,7 +28,7 @@ function setMainImg(){
 }
 
 function openFuture(){
-	window.open("part1.html", '_self');
+	window.open("index.html", '_self');
 }
 
 function playStart() {
