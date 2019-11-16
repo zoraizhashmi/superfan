@@ -17,13 +17,13 @@ playStart();
 
 function setMainImg(){
 	if (rand == 0) {
-		main.src = "images/starter1.jpg";
+		main.src = "images/fstarter1.jpg";
 	} 
 	else if ( rand == 1){
-		main.src = "images/starter2.jpg";
+		main.src = "images/fstarter2.jpg";
 	}
 	else if ( rand == 2) {
-		main.src = "images/starter3.jpg";
+		main.src = "images/fstarter3.jpg";
 	}
 }
 
