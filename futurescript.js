@@ -37,121 +37,77 @@ function playStart() {
 }
 
 function clickOne(){
-	rone = Math.floor(Math.random() * 3);
-	if (rone == 0) {
-		main.src = "images/lebron1.png";
-		a.src = "images/lebron2.gif";
-	} 
-	else if (rone == 1){
-		main.src = "images/lebron.gif";
-		a.src = "images/labron.jpg";
-	}
-	else if (rone == 2) {
-		main.src = "images/lebron2.jpg";
-		a.src = "images/lebron3.gif";
-	}
+	main.src = "images/giannis.jpg";
+	a.src = "images/giannis2.jpg";
 	var audio = new Audio('audio/giannis.wav');
 	audio.play();
 }
 
 function clickTwo(){
-	rtwo = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
-		main.src = "images/lebron1.png";
-	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
-	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
-	}
+	main.src = "images/harden.jpg";
+	b.src = "images/harden2.jpg";
 	var audio = new Audio('audio/harden.wav');
 	audio.play();
 }
 
 function clickThree(){
-	main.src = "images/dgreen.gif";
-	c.src = "images/dgreen.jpg";
+	rmain = Math.floor(Math.random() * 2);
+	main.src = "images/zion.jpg";
+	if (rmain == 0) {
+	c.src = "images/zion1.jpg";
+	} 
+	else if (rmain == 1) {
+	c.src = "images/zion2.jpg";
+	} 
 	var audio = new Audio('audio/zion.wav');
 	audio.play();
 }
 
 function clickFour(){
-	rfour = Math.floor(Math.random() * 2);
-	main.src = "images/dwight.gif";
-	if (rfour == 0) {
-		d.src = "images/dwight.jpg";
-	}
-	if (rfour == 1) {
-		d.src = "images/dwight.jfif";
-	}
+	main.src = "images/curry.jpg";
+	d.src = "images/curry2.jpg";
 	var audio = new Audio('audio/curry.wav');
 	audio.play();
 }
 
 function clickFive(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
-		main.src = "images/lebron1.png";
-	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
-	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
-	}
+	main.src = "images/westbrook.jpg";
+	e.src = "images/westbrook2.jpg";
 	var audio = new Audio('audio/westbrook.wav');
 	audio.play();
 }
 
 function clickSix(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
+	rmain = Math.floor(Math.random() * 2);
+	main.src = "images/kd.jpg";
 	if (rmain == 0) {
-		main.src = "images/lebron1.png";
+	f.src = "images/kd2.jpg";
 	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
-	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
-	}
+	else if (rmain == 1) {
+	f.src = "images/kd3.jpg";
+	} 
 	var audio = new Audio('audio/kd.wav');
 	audio.play();
 }
 
 function clickSeven(){
-	rseven = Math.floor(Math.random() * 3);
-	if (rseven == 0) {
-		main.src = "images/caruso5.jpg";
-		g.src = "images/caruso.jfif";
-	} 
-	else if (rseven == 1){
-		main.src = "images/caruso.gif";
-		g.src = "images/caruso4.jpg";
-	}
-	else if (rseven == 2) {
-		main.src = "images/caruso2.jpg";
-		g.src = "images/caruso3.jpg";
-	}
-	
+	main.src = "images/jbutler2.jpg";
+	g.src = "images/jbutler.jpg";
 	var audio = new Audio('audio/butler.wav');
 	audio.play();
 }
 
 function clickEight(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
+	rmain = Math.floor(Math.random() * 2);
+
+	main.src = "images/dame.jpg";
+	h.src = "images/dame2.jpg";
 	if (rmain == 0) {
-		main.src = "images/lebron1.png";
-	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
-	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
-	}
 	var audio = new Audio('audio/dame.wav');
 	audio.play();
+	} 
+	else if (rmain == 1) {
+	var audio = new Audio('audio/dame2.wav');
+	audio.play();
+	} 
 }

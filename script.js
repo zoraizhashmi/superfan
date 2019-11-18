@@ -9,11 +9,17 @@ var g = document.getElementById("img7");
 var h = document.getElementById("img8");
 var main = document.getElementById("mainatt");
 
+
+
 rand = Math.floor(Math.random() * 3);
 rmain = Math.floor(Math.random() * 3);
 rblck = Math.floor(Math.random() * 3);
 setMainImg();
 playStart();
+
+function stopSound() {
+	audio.stop();
+}
 
 function setMainImg(){
 	if (rand == 0) {
@@ -32,7 +38,7 @@ function openFuture(){
 }
 
 function playStart() {
-	var audio = new Audio('audio/purpandyellow.wav');
+	audio = new Audio('audio/purpandyellow.wav');
 	audio.play();
 }
 
@@ -106,18 +112,9 @@ function clickFive(){
 }
 
 function clickSix(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
-		main.src = "images/lebron1.png";
-	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
-	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
-	}
-	var audio = new Audio('audio/caruso.wav');
+	main.src = "images/rondo.jpg";
+	f.src = "images/rondo.gif";
+	var audio = new Audio('audio/rondo.wav');
 	audio.play();
 }
 
@@ -141,16 +138,22 @@ function clickSeven(){
 }
 
 function clickEight(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
+	rmain = Math.floor(Math.random() * 4);
 	if (rmain == 0) {
-		main.src = "images/lebron1.png";
+		main.src = "images/ad.gif";
+		h.src = "images/ad.jpg";
 	} 
 	else if (rmain == 1){
-		main.src = "images/caruso.gif";
+		main.src = "images/ad2.jpg";
+		h.src = "images/ad2.gif";
 	}
 	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
+		main.src = "images/ad4.jpg";
+		h.src = "images/ad.jfif";
+	}
+	else if (rmain == 3) {
+		main.src = "images/ad3.jpg";
+		h.src = "images/ad3.gif";
 	}
 	var audio = new Audio('audio/caruso.wav');
 	audio.play();
