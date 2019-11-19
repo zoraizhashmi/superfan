@@ -34,6 +34,8 @@ function openFuture(){
 	window.open("future.html", '_self');
 }
 
+document.getElementById("logo").addEventListener("click", resetAll);
+
 function playStart() {
 	var audio = new Audio('audio/purpandyellow.wav');
 	audio.play();

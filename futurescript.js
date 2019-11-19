@@ -27,9 +27,16 @@ function setMainImg(){
 	}
 }
 
+function openPast(){
+	window.open("past.html", '_self');
+}
+
 function openFuture(){
 	window.open("index.html", '_self');
 }
+
+document.getElementById("logo").addEventListener("click", resetAll);
+
 
 function playStart() {
 	var audio = new Audio('audio/purpandyellow.wav');
@@ -98,16 +105,8 @@ function clickSeven(){
 }
 
 function clickEight(){
-	rmain = Math.floor(Math.random() * 2);
-
 	main.src = "images/dame.jpg";
 	h.src = "images/dame2.jpg";
-	if (rmain == 0) {
 	var audio = new Audio('audio/dame.wav');
 	audio.play();
-	} 
-	else if (rmain == 1) {
-	var audio = new Audio('audio/dame2.wav');
-	audio.play();
-	} 
 }

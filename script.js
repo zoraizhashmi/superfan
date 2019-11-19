@@ -17,6 +17,16 @@ rblck = Math.floor(Math.random() * 3);
 setMainImg();
 playStart();
 
+function openPast(){
+	window.open("past.html", '_self');
+}
+function openFuture(){
+	window.open("future.html", '_self');
+}
+
+document.getElementById("logo").addEventListener("click", resetAll);
+
+
 function stopSound() {
 	audio.stop();
 }
