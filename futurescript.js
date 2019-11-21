@@ -8,12 +8,22 @@ var f = document.getElementById("img6");
 var g = document.getElementById("img7");
 var h = document.getElementById("img8");
 var main = document.getElementById("mainatt");
+var audio1 = new Audio('audio/giannis.wav');
+var audio2 = new Audio('audio/harden.wav');
+var audio3 = new Audio('audio/zion.wav');
+var audio4 = new Audio('audio/curry.wav');
+var audio5 = new Audio('audio/westbrook.wav');
+var audio6 = new Audio('audio/kd.wav');
+var audio7 = new Audio('audio/butler.wav');
+var audio8 = new Audio('audio/dame.wav');
 
 rand = Math.floor(Math.random() * 3);
 rmain = Math.floor(Math.random() * 3);
 rblck = Math.floor(Math.random() * 3);
 setMainImg();
 playStart();
+
+
 
 function setMainImg(){
 	if (rand == 0) {
@@ -35,26 +45,42 @@ function openFuture(){
 	window.open("index.html", '_self');
 }
 
-document.getElementById("logo").addEventListener("click", resetAll);
-
-
-function playStart() {
-	var audio = new Audio('audio/purpandyellow.wav');
-	audio.play();
+function reloadPage() {
+	location.reload();
 }
+
+function stopSound() {
+	audio1.pause();
+	audio1.currentTime = 0;
+	audio2.pause();
+	audio2.currentTime = 0;
+	audio3.pause();
+	audio3.currentTime = 0;
+	audio4.pause();
+	audio4.currentTime = 0;
+	audio5.pause();
+	audio5.currentTime = 0;
+	audio6.pause();
+	audio6.currentTime = 0;
+	audio7.pause();
+	audio7.currentTime = 0;
+	audio8.pause();
+	audio8.currentTime = 0;
+}
+
 
 function clickOne(){
 	main.src = "images/giannis.jpg";
 	a.src = "images/giannis2.jpg";
-	var audio = new Audio('audio/giannis.wav');
-	audio.play();
+	stopSound();
+	audio1.play();
 }
 
 function clickTwo(){
 	main.src = "images/harden.jpg";
 	b.src = "images/harden2.jpg";
-	var audio = new Audio('audio/harden.wav');
-	audio.play();
+	stopSound();
+	audio2.play();
 }
 
 function clickThree(){
@@ -66,22 +92,28 @@ function clickThree(){
 	else if (rmain == 1) {
 	c.src = "images/zion2.jpg";
 	} 
-	var audio = new Audio('audio/zion.wav');
-	audio.play();
+	stopSound();
+	audio3.play();
 }
 
 function clickFour(){
-	main.src = "images/curry.jpg";
+	rmain = Math.floor(Math.random() * 2);
+	main.src = "images/curry1.jpg";
+	if (rmain == 0) {
 	d.src = "images/curry2.jpg";
-	var audio = new Audio('audio/curry.wav');
-	audio.play();
+	} 
+	else if (rmain == 1) {
+	d.src = "images/curry3.jpg";
+	}
+	stopSound();
+	audio4.play();
 }
 
 function clickFive(){
-	main.src = "images/westbrook.jpg";
+	main.src = "images/westbrook1.jpg";
 	e.src = "images/westbrook2.jpg";
-	var audio = new Audio('audio/westbrook.wav');
-	audio.play();
+	stopSound();
+	audio5.play();
 }
 
 function clickSix(){
@@ -93,20 +125,20 @@ function clickSix(){
 	else if (rmain == 1) {
 	f.src = "images/kd3.jpg";
 	} 
-	var audio = new Audio('audio/kd.wav');
-	audio.play();
+	stopSound();
+	audio6.play();
 }
 
 function clickSeven(){
 	main.src = "images/jbutler2.jpg";
 	g.src = "images/jbutler.jpg";
-	var audio = new Audio('audio/butler.wav');
-	audio.play();
+	stopSound();
+	audio7.play();
 }
 
 function clickEight(){
 	main.src = "images/dame.jpg";
 	h.src = "images/dame2.jpg";
-	var audio = new Audio('audio/dame.wav');
-	audio.play();
+	stopSound();
+	audio8.play();
 }

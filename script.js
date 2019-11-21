@@ -8,7 +8,14 @@ var f = document.getElementById("img6");
 var g = document.getElementById("img7");
 var h = document.getElementById("img8");
 var main = document.getElementById("mainatt");
-
+var audio1 = new Audio('audio/lebron.wav');
+var audio2 = new Audio('audio/kuzma.wav');
+var audio3 = new Audio('audio/dgreen.wav');
+var audio4 = new Audio('audio/dwight.wav');
+var audio5 = new Audio('audio/javale.wav');
+var audio6 = new Audio('audio/rondo.wav');
+var audio7 = new Audio('audio/caruso.wav');
+var audio8 = new Audio('audio/ad.wav');
 
 
 rand = Math.floor(Math.random() * 3);
@@ -24,11 +31,27 @@ function openFuture(){
 	window.open("future.html", '_self');
 }
 
-document.getElementById("logo").addEventListener("click", resetAll);
-
+function reloadPage() {
+	location.reload();
+}
 
 function stopSound() {
-	audio.stop();
+	audio1.pause();
+	audio1.currentTime = 0;
+	audio2.pause();
+	audio2.currentTime = 0;
+	audio3.pause();
+	audio3.currentTime = 0;
+	audio4.pause();
+	audio4.currentTime = 0;
+	audio5.pause();
+	audio5.currentTime = 0;
+	audio6.pause();
+	audio6.currentTime = 0;
+	audio7.pause();
+	audio7.currentTime = 0;
+	audio8.pause();
+	audio8.currentTime = 0;
 }
 
 function setMainImg(){
@@ -66,30 +89,33 @@ function clickOne(){
 		main.src = "images/lebron2.jpg";
 		a.src = "images/lebron3.gif";
 	}
-	var audio = new Audio('audio/lebron.wav');
-	audio.play();
+	stopSound();
+	audio1.play();
 }
 
 function clickTwo(){
-	rtwo = Math.floor(Math.random() * 3);
+	rmain = Math.floor(Math.random() * 3);
 	if (rmain == 0) {
-		main.src = "images/lebron1.png";
+		main.src = "images/kuzma.jpg";
+		b.src = "images/kuzma.gif";
 	} 
 	else if (rmain == 1){
-		main.src = "images/caruso.gif";
+		main.src = "images/kuzma2.gif";
+		b.src = "images/kuzma2.jpg";
 	}
 	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
+		main.src = "images/kuzma3.gif";
+		b.src = "images/kuzma3.jpg";
 	}
-	var audio = new Audio('audio/caruso.wav');
-	audio.play();
+	stopSound();
+	audio2.play();
 }
 
 function clickThree(){
 	main.src = "images/dgreen.gif";
 	c.src = "images/dgreen.jpg";
-	var audio = new Audio('audio/dgreen.wav');
-	audio.play();
+	stopSound();
+	audio3.play();
 }
 
 function clickFour(){
@@ -101,31 +127,22 @@ function clickFour(){
 	if (rfour == 1) {
 		d.src = "images/dwight.jfif";
 	}
-	var audio = new Audio('audio/dwight.wav');
-	audio.play();
+	stopSound();
+	audio4.play();
 }
 
 function clickFive(){
-	rmain = Math.floor(Math.random() * 3);
-	rblck = Math.floor(Math.random() * 3);
-	if (rmain == 0) {
-		main.src = "images/lebron1.png";
-	} 
-	else if (rmain == 1){
-		main.src = "images/caruso.gif";
-	}
-	else if (rmain == 2) {
-		main.src = "images/dgreen.png";
-	}
-	var audio = new Audio('audio/caruso.wav');
-	audio.play();
+	main.src = "images/javale.jpg";
+	e.src = "images/javale2.gif"
+	stopSound();
+	audio5.play();
 }
 
 function clickSix(){
 	main.src = "images/rondo.jpg";
 	f.src = "images/rondo.gif";
-	var audio = new Audio('audio/rondo.wav');
-	audio.play();
+	stopSound();
+	audio6.play();
 }
 
 function clickSeven(){
@@ -141,10 +158,9 @@ function clickSeven(){
 	else if (rseven == 2) {
 		main.src = "images/caruso2.jpg";
 		g.src = "images/caruso3.jpg";
-	}
-	
-	var audio = new Audio('audio/caruso.wav');
-	audio.play();
+	}	
+	stopSound();
+	audio7.play();
 }
 
 function clickEight(){
@@ -165,6 +181,6 @@ function clickEight(){
 		main.src = "images/ad3.jpg";
 		h.src = "images/ad3.gif";
 	}
-	var audio = new Audio('audio/caruso.wav');
-	audio.play();
+	stopSound();
+	audio8.play();
 }

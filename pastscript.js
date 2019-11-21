@@ -8,6 +8,16 @@ var f = document.getElementById("img6");
 var g = document.getElementById("img7");
 var h = document.getElementById("img8");
 var main = document.getElementById("mainatt");
+var startaudio = new Audio('audio/pstart.wav');
+var audio1 = new Audio('audio/kobe.wav');
+var audio2 = new Audio('audio/magic.wav');
+var audio3 = new Audio('audio/wilt.wav');
+var audio4 = new Audio('audio/west.wav');
+var audio5 = new Audio('audio/elgin.wav');
+var audio6 = new Audio('audio/mikan.wav');
+var audio7 = new Audio('audio/shaq.wav');
+var audio8 = new Audio('audio/kareem.wav');
+
 
 rand = Math.floor(Math.random() * 3);
 rmain = Math.floor(Math.random() * 3);
@@ -34,12 +44,29 @@ function openFuture(){
 	window.open("future.html", '_self');
 }
 
-document.getElementById("logo").addEventListener("click", resetAll);
-
-function playStart() {
-	var audio = new Audio('audio/purpandyellow.wav');
-	audio.play();
+function reloadPage() {
+	location.reload();
 }
+
+function stopSound() {
+	audio1.pause();
+	audio1.currentTime = 0;
+	audio2.pause();
+	audio2.currentTime = 0;
+	audio3.pause();
+	audio3.currentTime = 0;
+	audio4.pause();
+	audio4.currentTime = 0;
+	audio5.pause();
+	audio5.currentTime = 0;
+	audio6.pause();
+	audio6.currentTime = 0;
+	audio7.pause();
+	audio7.currentTime = 0;
+	audio8.pause();
+	audio8.currentTime = 0;
+}
+
 
 function clickOne(){
 	rmain = Math.floor(Math.random() * 4);
@@ -59,75 +86,57 @@ function clickOne(){
 	main.src = "images/kobe4.gif";
 	a.src = "images/kobe4.jpg";
 	} 
-	var audio = new Audio('audio/kobe.wav');
-	audio.play();
+	stopSound();
+	audio1.play();
 }
 
 function clickTwo(){
-	main.src = "images/harden.jpg";
-	b.src = "images/harden2.jpg";
-	var audio = new Audio('audio/harden.wav');
-	audio.play();
+	main.src = "images/magic.jpg";
+	b.src = "images/magic.gif";
+	stopSound();
+	audio2.play();
 }
 
 function clickThree(){
 	rmain = Math.floor(Math.random() * 2);
-	main.src = "images/zion.jpg";
-	if (rmain == 0) {
-	c.src = "images/zion1.jpg";
-	} 
-	else if (rmain == 1) {
-	c.src = "images/zion2.jpg";
-	} 
-	var audio = new Audio('audio/zion.wav');
-	audio.play();
+	main.src = "images/wilt.gif";
+	c.src = "images/wilt.jpg"; 
+	stopSound();
+	audio3.play();
 }
 
 function clickFour(){
-	main.src = "images/curry.jpg";
-	d.src = "images/curry2.jpg";
-	var audio = new Audio('audio/curry.wav');
-	audio.play();
+	main.src = "images/west.gif";
+	d.src = "images/west.jpg";
+	stopSound();
+	audio4.play();
 }
 
 function clickFive(){
-	main.src = "images/westbrook.jpg";
-	e.src = "images/westbrook2.jpg";
-	var audio = new Audio('audio/westbrook.wav');
-	audio.play();
+	main.src = "images/elgin2.gif";
+	e.src = "images/elgin2.jpg";
+	stopSound();
+	audio5.play();
 }
 
 function clickSix(){
-	rmain = Math.floor(Math.random() * 2);
-	main.src = "images/kd.jpg";
-	if (rmain == 0) {
-	f.src = "images/kd2.jpg";
-	} 
-	else if (rmain == 1) {
-	f.src = "images/kd3.jpg";
-	} 
-	var audio = new Audio('audio/kd.wav');
-	audio.play();
+	main.src = "images/mikan1.jpg";
+	f.src = "images/mikan2.jpg";
+	stopSound();
+	audio6.play();
 }
 
 function clickSeven(){
-	main.src = "images/jbutler2.jpg";
-	g.src = "images/jbutler.jpg";
-	var audio = new Audio('audio/butler.wav');
-	audio.play();
+	main.src = "images/shaq.gif";
+	g.src = "images/shaq.jpg";
+	stopSound();
+	audio7.play();
 }
 
 function clickEight(){
 	rmain = Math.floor(Math.random() * 2);
-
-	main.src = "images/dame.jpg";
-	h.src = "images/dame2.jpg";
-	if (rmain == 0) {
-	var audio = new Audio('audio/dame.wav');
-	audio.play();
-	} 
-	else if (rmain == 1) {
-	var audio = new Audio('audio/dame2.wav');
-	audio.play();
-	} 
+	main.src = "images/kareem.gif";
+	h.src = "images/kareem.jpg";
+	stopSound();
+	audio8.play();
 }
