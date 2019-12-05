@@ -18,8 +18,6 @@ var audio7 = new Audio('audio/butler.wav');
 var audio8 = new Audio('audio/dame.wav');
 
 rand = Math.floor(Math.random() * 3);
-rmain = Math.floor(Math.random() * 3);
-rblck = Math.floor(Math.random() * 3);
 setMainImg();
 playStart();
 

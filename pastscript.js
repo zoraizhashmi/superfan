@@ -20,8 +20,6 @@ var audio8 = new Audio('audio/kareem.wav');
 
 
 rand = Math.floor(Math.random() * 3);
-rmain = Math.floor(Math.random() * 3);
-rblck = Math.floor(Math.random() * 3);
 setMainImg();
 playStart();
 

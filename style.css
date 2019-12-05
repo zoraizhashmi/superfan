@@ -84,6 +84,23 @@ body {
 	display: block;
 }
 
+.caption .captiontext {
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.caption:hover .captiontext {
+    visibility: visible;
+}
+
 
 /* opaque = nontransparent, not letting light through, difficult to understand */
 .opaque {
@@ -91,14 +108,9 @@ body {
 }
 
 /* colors */
-.light-grey {background-color: #A9A9A9;}
-.dark-grey {background-color: #707070;}
-.black {background-color: #000000;}
-.white {background-color: #FFFFFF;}
-.mplsblue {background-color: #5fbcf7;}
-.mplsyellow {background-color: #fff25c;}
 .purple {background-color: #552583;}
 .gold {background-color: #FDB927;}
+.purple2 {background-color: #453c49;}
 .gold2 {background-color: #fedc7f;}
 /* you may choose to use these classes for one of the challenges */
 .gone {
@@ -123,9 +135,13 @@ img {
 }
 
 .zoom:hover {
-  transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(0.95);
   cursor: url('images/hoverc.png'), auto;
 
+}
+
+.zoom:active {
+  transform: scale(0.85);
 }
 
 .mainattimg{
@@ -180,11 +196,11 @@ img {
 
 	#two {background-color: #552583;}
 
-	.mainattimg{
+	.mainattimg {
 		border-style: solid;
 		border-width: 2.5px;
 		border-color: white; 
-}
+	}
 
 }
 
