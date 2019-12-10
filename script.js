@@ -8,6 +8,7 @@ var f = document.getElementById("img6");
 var g = document.getElementById("img7");
 var h = document.getElementById("img8");
 var main = document.getElementById("mainatt");
+var	audiostart = new Audio('audio/purpandyellow.wav');
 var audio1 = new Audio('audio/lebron.wav');
 var audio2 = new Audio('audio/kuzma.wav');
 var audio3 = new Audio('audio/dgreen.wav');
@@ -34,6 +35,8 @@ function reloadPage() {
 }
 
 function stopSound() {
+	audiostart.pause();
+	audiostart.currentTime = 0;
 	audio1.pause();
 	audio1.currentTime = 0;
 	audio2.pause();
@@ -69,8 +72,7 @@ function openFuture(){
 }
 
 function playStart() {
-	audio = new Audio('audio/purpandyellow.wav');
-	audio.play();
+	audiostart.play();
 }
 
 function clickOne(){
