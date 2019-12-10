@@ -19,7 +19,7 @@ var audio8 = new Audio('audio/dame.wav');
 
 rand = Math.floor(Math.random() * 3);
 setMainImg();
-playStart();
+
 
 
 
