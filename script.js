@@ -132,8 +132,14 @@ function clickFour(){
 }
 
 function clickFive(){
+	rfour = Math.floor(Math.random() * 2);
 	main.src = "images/javale.jpg";
-	e.src = "images/javale2.gif"
+	if (rfour == 0) {
+		e.src = "images/javale2.gif"
+	}
+	if (rfour == 1) {
+		e.src = "images/javale.gif"
+	}
 	stopSound();
 	audio5.play();
 }
