@@ -132,12 +132,12 @@ function clickFour(){
 }
 
 function clickFive(){
-	rfour = Math.floor(Math.random() * 2);
+	rfive = Math.floor(Math.random() * 2);
 	main.src = "images/javale.jpg";
-	if (rfour == 0) {
+	if (rfive == 0) {
 		e.src = "images/javale2.gif"
 	}
-	if (rfour == 1) {
+	if (rfive == 1) {
 		e.src = "images/javale.gif"
 	}
 	stopSound();
