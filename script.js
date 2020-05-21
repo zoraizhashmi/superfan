@@ -37,7 +37,7 @@ function reloadPage() {
 }
 
 function playStart() {
-		
+	stopSound()	
 	if (rand == 0) {
 		audiostart1.play();
 	} 
