@@ -21,16 +21,10 @@ var audio7 = new Audio('audio/caruso.wav');
 var audio8 = new Audio('audio/ad.wav');
 
 
+
 rand = Math.floor(Math.random() * 3);
 setMainImg();
 playStart();
-
-function openPast(){
-	window.open("past.html", '_self');
-}
-function openFuture(){
-	window.open("future.html", '_self');
-}
 
 function reloadPage() {
 	location.reload();
@@ -72,6 +66,13 @@ function stopSound() {
 	audio7.currentTime = 0;
 	audio8.pause();
 	audio8.currentTime = 0;
+}
+
+function openPast(){
+	window.open("past.html", '_self');
+}
+function openFuture(){
+	window.open("future.html", '_self');
 }
 
 function setMainImg(){
