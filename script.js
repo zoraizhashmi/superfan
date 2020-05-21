@@ -50,8 +50,8 @@ function playStart() {
 }
 
 function stopSound() {
-	audiostart.pause();
-	audiostart.currentTime = 0;
+	audiostart1.pause();
+	audiostart1.currentTime = 0;
 	audiostart2.pause();
 	audiostart2.currentTime = 0;
 	audiostart3.pause();
